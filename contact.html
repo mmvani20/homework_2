@@ -7,7 +7,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link rel="stylesheet" href="./style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="style.css">
    </head>
     <!--links to other pages-->
    <body>
@@ -22,13 +23,13 @@
           <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="./portfolo.html">Portfolio</a>
+                <a class="nav-link" href="portfolo.html">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./indext.html">About</a>
+                <a class="nav-link" href="index.html">About</a>
               </li>
             </ul>
           </div>
@@ -41,24 +42,37 @@
                <div class="page header">
                   <h1>Contact</h1>
                </div>
-               <div class="mb-3">
+               <div class="mb-3" id="form">
                   <label for="exampleFormControlInput1" class="form-label">Name</label>
                   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name">
                </div>
                <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name">
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="thezivnl@gmail.com">
                </div>
                <div class="mb-3">
                   <label for="exampleFormControlTextarea1" class="form-label">Message</label>
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
                </div>
                <div class="col-12">
-                  <button class="btn btn-primary" type="submit">Submit</button>
+                  <button class="btn btn-primary" type="submit" id="submit_btn">Submit</button>
                </div>
             </div>
          </div>
       </div>
+      <div class="footer">
+         <a href="https://linkedin.com/in/moses-m-vani-594b21191" class="fa fa-linkedin"></a>
+         <a href="https://https://github.com/mmvani20" class="fa fa-github"></a>
+         <a class="Number">Contatc: 407-714-9249</a>
+       </div>
+       <script>
+       const form =document.getElementById("form");
+         form.addEventListener("submit", (event)=>{
+            event.preventDefault();
+         })
+
+          
+       </script>
        <!--end contact log-->
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
